@@ -22,6 +22,7 @@ from InvestmentAdvisorAPP import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^api/v1/in_ad', views.InvestmentView.as_view()),
+    url(r'^api/v1/risk_pricing', views.RiskAndExpView.as_view()),
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)
